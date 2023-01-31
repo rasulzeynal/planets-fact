@@ -1,5 +1,12 @@
 .navbar{
+    color: #ffffff !important;
     background-color: #070724 !important;
+    background-image: url("../assets/background-stars.svg");
     font-family: 'Antonio', sans-serif;
     height: 80px !important;
+
+    .collapse{
+        display: flex;
+        justify-content: end;
+    }
 }

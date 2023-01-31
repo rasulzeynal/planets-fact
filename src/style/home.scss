@@ -1,0 +1,17 @@
+.home{
+    .top{
+        display: flex;
+        .planet{
+            display: inline-flex;
+            justify-content: center;
+            align-items: center;
+            width: 100vw;
+        img{
+            width: 290px;
+            height: 290px;
+            
+        }
+    }
+        
+    }    
+}
