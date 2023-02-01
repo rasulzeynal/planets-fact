@@ -1,18 +1,18 @@
 .home{
     font-family: a;
     .top{
-        margin-top: 100px;
+        margin-top: 15px;
         .planet{
         img{
-            width: 290px;
-            height: 290px;   
+            width: 250px;
+            height: 250px;   
         }
     }
         .info{
            h1{
-            font-size: 80px;
+            font-size: 50px;
             font-weight: 400;
-            line-height: 104px;
+            line-height: 74px;
             text-transform: uppercase;
            }
            p{
@@ -36,18 +36,61 @@
            }
            .buttons{
                 button{
-                    height: 48px;
+                    height: 35px;
                     background-color: transparent;
                     display: flex;
-                    justify-content: space-between;
+                    align-items: center;
                     border: 1px solid #ffffff;
                     color: #ffffff;
+                    margin-top: 10px;
+                    
                     h4{
                         margin: 0;
-                        padding: 12px 28px;
+                        padding: 5px 15px;
+                        opacity: 0.5;
+                        font-family: "spartan";
+                    font-size: 12px;
+                    font-family: 700;
+                    line-height: 25px;
+                    letter-spacing: 2.5px;
+                    }
+                    h3{
+                        margin: 0;
+                        font-family: "spartan";
+                        font-size: 12px;
+                        font-family: 900;
+                        line-height: 25px;
+                        letter-spacing: 2.5px;
+                        text-align: start;
+
                     }
                 }
            }
         }
-    }    
+    } 
+    .statistics{
+        div{
+            width: 200px;
+            height: 90px;
+            text-align: start;
+            font-family: "Antonio";
+            border: 1px solid rgba(255,255,255,0.6);
+            
+
+            p{
+                font-size: 11px;
+                padding: 15px 0 0 25px;
+                font-weight: 700;
+                line-height: 25px;
+                letter-spacing: 1px;
+                opacity: 0.5;
+                margin: 0;
+            }
+            h2{
+                font-size: 24px;
+                padding-left:25px;
+                padding-top: 5px;
+            }
+        }
+    }  
 }
