@@ -1,112 +1,122 @@
-.home{
-    font-family: a;
-    display: grid;
-    grid-template-rows: 5fr 1fr;
-    .top{
-        margin-top: 15px;
-        align-items: center;
-        .planet{
-        img{
-            width: 290px;
-            height: 290px;   
-        }
+.home {
+  font-family: a;
+  display: grid;
+  grid-template-rows: 5fr 1fr;
+  .top {
+    margin-top: 15px;
+    align-items: center;
+    .planet {
+      position: relative;
+      img {
+        height: 80%;
+      }
+      .geology {
+        position: absolute;
+        
+        top:calc(100% - 120px);
+      }
     }
-        .info{
-           h1{
-            font-size: 80px;
-            font-weight: 400;
-            line-height: 74px;
-            text-transform: uppercase;
-            font-family: "Antonio";
-            padding-bottom:10px ;
-           }
-           p{
-            font-size: 14px;
-            font-weight: 400;
-            line-height: 25px;
-            font-family: 'Spartan';
-           }
-           p:nth-child(2){
-            opacity: 0.7;
-           }
-           p:nth-child(3){
-            font-weight: 100;
-            opacity:0.5 ;
-            letter-spacing: 2px;
-            a{
-                font-weight: 700;
-                color: #ffffff;
-                letter-spacing: 3px;
-            }
-           }
-           .buttons{
-                button{
-                    height: 40px;
-                    background-color: transparent;
-                    display: flex;
-                    align-items: center;
-                    border: 1px solid #ffffff;
-                    color: #ffffff;
-                    margin-top: 10px;
-
-                    &:hover{
-                        background-color: rgba(216, 216, 216, 0.2);
-                        border-color:rgba(216, 216, 216, 0.2);
-                    }
-                    &:active{
-                        background-color: #419EBB;
-                        border-color: #419EBB;
-                    }
-                    h4{
-                        margin: 0;
-                        padding: 5px 15px;
-                        opacity: 0.5;
-                        font-family: "spartan";
-                    font-size: 12px;
-                    font-family: 700;
-                    line-height: 25px;
-                    letter-spacing: 2.5px;
-                    opacity: 1;
-                    }
-                    h3{
-                        margin: 0;
-                        font-family: "spartan";
-                        font-size: 12px;
-                        font-family: 900;
-                        line-height: 25px;
-                        letter-spacing: 2.5px;
-                        text-align: start;
-
-                    }
-                }
-           }
-        }
-    } 
-    .statistics{
+    .info {
+      h1 {
+        font-size: 80px;
+        font-weight: 400;
+        line-height: 74px;
+        text-transform: uppercase;
+        font-family: "Antonio";
+        padding-bottom: 10px;
+      }
+      p {
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 25px;
+        font-family: "Spartan";
+      }
+      p:nth-child(2) {
+        opacity: 0.7;
+        height: 150px;
         display: flex;
-        align-items: flex-end;
-        div{
-            width: 200px;
-            height: 90px;
-            text-align: start;
-            font-family: "Antonio";
-            border: 1px solid rgba(255,255,255,0.6);
-            
-
-            p{
-                font-size: 11px;
-                padding: 15px 0 0 25px;
-                font-weight: 700;
-                line-height: 25px;
-                letter-spacing: 1px;
-                opacity: 0.5;
-                margin: 0;
-            }
-            h2{
-                font-size: 24px;
-                padding-left:25px;
-                padding-top: 5px;
-            }
+        align-items: center;
+      }
+      p:nth-child(3) {
+        font-weight: 100;
+        opacity: 0.5;
+        letter-spacing: 2px;
+        a {
+          font-weight: 700;
+          color: #ffffff;
+          letter-spacing: 3px;
         }
-    }  
+      }
+      .buttons {
+        .active{
+            background-color: #419ebb;
+            border-color: #419ebb;
+        }
+        button {
+          height: 40px;
+          background-color: transparent;
+          display: flex;
+          align-items: center;
+          border: 1px solid #ffffff;
+          color: #ffffff;
+          margin-top: 10px;
+
+          &:hover {
+            background-color: rgba(216, 216, 216, 0.2);
+            border-color: rgba(216, 216, 216, 0.2);
+          }
+          &:focus {
+            background-color: #419ebb;
+            border-color: #419ebb;
+          }
+          h4 {
+            margin: 0;
+            padding: 5px 15px;
+            opacity: 0.5;
+            font-family: "spartan";
+            font-size: 12px;
+            font-family: 700;
+            line-height: 25px;
+            letter-spacing: 2.5px;
+            opacity: 1;
+          }
+          h3 {
+            margin: 0;
+            font-family: "spartan";
+            font-size: 12px;
+            font-family: 900;
+            line-height: 25px;
+            letter-spacing: 2.5px;
+            text-align: start;
+          }
+        }
+      }
+    }
+  }
+  .statistics {
+    display: flex;
+    align-items: flex-end;
+    div {
+      width: 200px;
+      height: 90px;
+      text-align: start;
+      font-family: "Antonio";
+      border: 1px solid rgba(255, 255, 255, 0.6);
+
+      p {
+        font-size: 11px;
+        padding: 15px 0 0 25px;
+        font-weight: 700;
+        line-height: 25px;
+        letter-spacing: 1px;
+        opacity: 0.5;
+        margin: 0;
+      }
+      h2 {
+        font-size: 24px;
+        padding-left: 25px;
+        padding-top: 5px;
+      }
+    }
+  }
 }
