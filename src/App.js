@@ -6,7 +6,7 @@ import data from "./data.json";
 
 function App() {
   const [planet, setPlanet] = useState(data[0]);
-  const [planetInfo, setPlanetInfo] = useState(planet.overview.content);
+  const [planetInfo, setPlanetInfo] = useState(planet.overview);
   const [planetImage, setPlanetImage] = useState(planet.images.planet);
   const [imageGeology, setImageGeology] = useState(false);
   const [activeButton, setActiveButton] = useState(true);

@@ -25,10 +25,10 @@ const Home = ({
         </div>
         <div className="info d-flex flex-column col-4">
           <h1>{planet.name}</h1>
-          <p>{planetInfo}</p>
+          <p>{planetInfo.content}</p>
           <p>
             Source:{" "}
-            <a href={planet.overview.source} target="_blank">
+            <a href={planetInfo.source} target="_blank">
               Wikipedia
             </a>
           </p>
@@ -36,7 +36,7 @@ const Home = ({
             <button
             className={activeButton && "active"}
               onClick={() => {
-                setPlanetInfo(planet.overview.content);
+                setPlanetInfo(planet.overview);
                 setPlanetImage(planet.images.planet);
                 setImageGeology(false);
                 setActiveButton(true)
@@ -47,7 +47,7 @@ const Home = ({
             </button>
             <button
               onClick={() => {
-                setPlanetInfo(planet.structure.content);
+                setPlanetInfo(planet.structure);
                 setPlanetImage(planet.images.internal);
                 setImageGeology(false);
                 setActiveButton(false)
@@ -58,7 +58,7 @@ const Home = ({
             </button>
             <button
               onClick={() => {
-                setPlanetInfo(planet.geology.content);
+                setPlanetInfo(planet.geology);
                 setPlanetImage(planet.images.planet);
                 setImageGeology(true);
                 setActiveButton(false)

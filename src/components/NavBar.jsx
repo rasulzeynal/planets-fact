@@ -16,7 +16,7 @@ function NavBar({setPlanet,setPlanetInfo,setPlanetImage, setImageGeology,setActi
             {data.map(planet => ( 
               <Nav.Link onClick={() => {
                 setPlanet(planet)
-                setPlanetInfo(planet.overview.content)
+                setPlanetInfo(planet.overview)
                 setPlanetImage(planet.images.planet)
                 setImageGeology(false)
                 setActiveButton(true)
