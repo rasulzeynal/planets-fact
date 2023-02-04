@@ -7,7 +7,7 @@ import '../style/navbar.scss'
 
 function NavBar({setPlanet,setPlanetInfo,setPlanetImage, setImageGeology,setActiveButton}) {
   return (
-    <Navbar collapseOnSelect expand="lg"  variant="dark">
+    <Navbar collapseOnSelect expand="sm"  variant="dark">
       <Container>
         <Navbar.Brand href="#home">THE PLANETS</Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />

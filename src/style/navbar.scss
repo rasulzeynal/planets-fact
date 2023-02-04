@@ -5,8 +5,48 @@
     height: 80px !important;
     padding: 0 !important;
 
+    .navbar-brand{
+        font-size:28px ;
+    }
+
     .collapse{
         display: flex;
         justify-content: end;
     }
 }
+@media (max-width:"992px") {
+    .navbar{
+        height: 130px !important;
+       .container{
+        display: block !important;
+        text-align: center;
+        .navbar-collapse{
+            .navbar-nav{
+                margin: 20px 0;
+                width: 100%;
+                justify-content: space-between;
+            }
+
+        }
+    } 
+    }
+}
+/* @media (max-width:"576px") {
+    .navbar{
+       .container{
+        display: flex !important;
+        .navbar-collapse{
+            display: flex;
+            justify-content: space-around;
+
+            .navbar-nav{
+                margin: 20px 0;
+                width: 100%;
+                justify-content: space-between;
+            }
+
+        }
+    } 
+    }
+    
+} */

@@ -17,13 +17,13 @@ const Home = ({
   return (
     <div className="home container">
       <div className="top d-flex">
-        <div className="planet d-flex justify-content-center align-items-center flex-direction-column col-8">
+        <div className="planet d-flex justify-content-center align-items-center flex-direction-column col-md-12 col-lg-8">
           <img src={planetImage} alt="planet" />
           {imageGeology ? (
             <img className="geology" src={planet.images.geology} alt="planet" />
           ) : null}
         </div>
-        <div className="info d-flex flex-column col-4">
+        <div className="info d-flex flex-column col-xs-12 col-md-6 col-lg-4">
           <h1>{planet.name}</h1>
           <p>{planetInfo.content}</p>
           <p>
