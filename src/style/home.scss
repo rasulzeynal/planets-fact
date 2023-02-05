@@ -1,9 +1,8 @@
 .home {
   font-family: a;
   display: grid;
-  grid-template-rows: 5fr 1fr;
+  grid-template-rows: 4fr 1fr;
   .top {
-    margin-top: 15px;
     align-items: center;
     .planet {
       position: relative;
