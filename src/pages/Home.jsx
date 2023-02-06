@@ -23,8 +23,9 @@ const Home = ({
             <img className="geology" src={planet.images.geology} alt="planet" />
           ) : null}
         </div>
-        <div className="info d-flex flex-column col-xs-12 col-md-6 col-lg-4">
-          <h1>{planet.name}</h1>
+        <div className="info d-flex flex-column col-xs-12  col-lg-4">
+          <div className="col-xs-12 col-sm-6 col-lg-12">
+            <h1>{planet.name}</h1>
           <p>{planetInfo.content}</p>
           <p>
             Source:{" "}
@@ -32,7 +33,9 @@ const Home = ({
               Wikipedia
             </a>
           </p>
-          <div className="buttons d-flex flex-column mt-2">
+          </div>
+          
+          <div className="buttons d-flex flex-column mt-2 col-xs-12 col-sm-5 col-lg-12">
             <button
             className={activeButton && "active"}
               onClick={() => {
@@ -70,7 +73,7 @@ const Home = ({
           </div>
         </div>
       </div>
-      <div className="statistics d-flex mt-5 justify-content-between">
+      <div className="statistics d-flex justify-content-between">
         <div className="rotation-time">
           <p>ROTATION TIME</p>
           <h2>{planet.rotation}</h2>

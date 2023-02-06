@@ -1,7 +1,7 @@
 .home {
   font-family: a;
   display: grid;
-  grid-template-rows: 4fr 1fr;
+  grid-template-rows: 5fr 1fr;
   .top {
     align-items: center;
     .planet {
@@ -32,7 +32,6 @@
       }
       p:nth-child(2) {
         opacity: 0.7;
-        height: 150px;
         display: flex;
         align-items: center;
       }
@@ -95,6 +94,7 @@
   .statistics {
     display: flex;
     align-items: flex-end;
+    margin-top: 80px;
     div {
       width: 200px;
       height: 90px;
@@ -130,6 +130,51 @@
         margin: 50px 0;
         img{
           width: 50%;
+        }
+        .geology {
+          position: absolute;
+          height: 200px;
+          width: 200px;
+          top:calc(100% - 120px);
+        }
+      }
+      .info {
+        flex-direction: row !important;
+        margin-top: 150px !important;
+        justify-content: space-between;
+        h1 {
+          font-size: 60px;
+          line-height: 62px;
+        }
+        .buttons {
+          button {
+            height: 50px;
+          }
+        }
+      }
+    }
+    .statistics {
+      margin-top: 0px;
+      div {
+        width: 20%;
+        height: 90px;
+        text-align: start;
+        font-family: "Antonio";
+        border: 1px solid rgba(255, 255, 255, 0.6);
+  
+        p {
+          font-size: 11px;
+          padding: 15px 0 0 25px;
+          font-weight: 700;
+          line-height: 25px;
+          letter-spacing: 1px;
+          opacity: 0.5;
+          margin: 0;
+        }
+        h2 {
+          font-size: 22px;
+          padding-left: 25px;
+          padding-top: 5px;
         }
       }
     }
