@@ -12,8 +12,6 @@ const Home = ({
   setActiveButton,
   activeButton
 }) => {
-  /* console.log(planet); */
-  console.log(planetImage);
   return (
     <div className="home container">
       <div className="top d-flex">
