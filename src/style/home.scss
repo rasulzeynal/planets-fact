@@ -180,3 +180,41 @@
     }
   }
 }
+
+@media (max-width:"767px"){
+  .home{
+    position: relative;
+
+    .buttons{
+      position: absolute;
+      top: 0;
+      display: flex !important;
+      flex-direction: row !important;
+      justify-content: space-between;
+      width: 100%;
+      border-bottom: 2px solid #7a7979;
+      padding-bottom: 5px;
+      padding: 0 10px 5px 10px;
+
+      .active{
+        background-color: transparent !important;
+        border-bottom:1px solid  #419ebb;
+      }
+      
+      button{
+        border: none !important;
+        h4{
+          display: none;
+        }
+        &:hover {
+          background-color: transparent;
+          border-color: rgba(216, 216, 216, 0.2);
+        }
+        &:focus {
+          background-color: transparent;
+          border-color: #419ebb;
+        }
+      }
+    }
+  }
+}
