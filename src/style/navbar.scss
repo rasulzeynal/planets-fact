@@ -31,22 +31,11 @@
     } 
     }
 }
-/* @media (max-width:"576px") {
-    .navbar{
-       .container{
+@media (max-width:"992px") {
+  .navbar{
+    height: 80px !important;
+    .container{
         display: flex !important;
-        .navbar-collapse{
-            display: flex;
-            justify-content: space-around;
-
-            .navbar-nav{
-                margin: 20px 0;
-                width: 100%;
-                justify-content: space-between;
-            }
-
-        }
-    } 
     }
-    
-} */
+  }
+}
