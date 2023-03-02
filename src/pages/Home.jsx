@@ -10,10 +10,11 @@ const Home = ({
   imageGeology,
   setImageGeology,
   setActiveButton,
-  activeButton
+  activeButton,
+  hamburgerMenuClicked
 }) => {
   return (
-    <div className="home container">
+    <div className={hamburgerMenuClicked ? "d-none" : "home container"}>
       <div className="top d-flex">
         <div className="planet d-flex justify-content-center align-items-center flex-direction-column col-md-12 col-lg-8">
           <img src={planetImage} alt="planet" />

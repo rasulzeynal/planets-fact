@@ -2,6 +2,7 @@
   font-family: a;
   display: grid;
   grid-template-rows: 5fr 1fr;
+  z-index: 2;
   .top {
     align-items: center;
     .planet {

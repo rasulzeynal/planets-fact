@@ -10,6 +10,7 @@ function App() {
   const [planetImage, setPlanetImage] = useState(planet.images.planet);
   const [imageGeology, setImageGeology] = useState(false);
   const [activeButton, setActiveButton] = useState(true);
+  const [hamburgerMenuClicked,setHamburgerMenuClicked] = useState(false);
   return (
     <div className="app">
       <NavBar
@@ -18,6 +19,8 @@ function App() {
         setPlanetImage={setPlanetImage}
         setImageGeology={setImageGeology}
         setActiveButton={setActiveButton}
+        hamburgerMenuClicked={hamburgerMenuClicked}
+        setHamburgerMenuClicked={setHamburgerMenuClicked}
       />
       <hr style={{ margin: "0" }} />
       <Home
@@ -30,6 +33,7 @@ function App() {
         setImageGeology={setImageGeology}
         setActiveButton={setActiveButton}
         activeButton={activeButton}
+        hamburgerMenuClicked={hamburgerMenuClicked}
       />
     </div>
   );
