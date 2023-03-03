@@ -1,7 +1,7 @@
 .home {
   font-family: a;
   display: grid;
-  grid-template-rows: 5fr 1fr;
+  grid-template-rows: 3fr 1fr;
   z-index: 2;
   .top {
     align-items: center;
@@ -95,6 +95,7 @@
     display: flex;
     align-items: flex-end;
     margin-top: 80px;
+    margin-bottom: 50px;
     div {
       width: 200px;
       height: 90px;
@@ -156,15 +157,17 @@
     .statistics {
       margin-top: 0px;
       div {
-        width: 20%;
+        width: 23%;
         height: 90px;
-        text-align: start;
+        text-align: center;
         font-family: "Antonio";
         border: 1px solid rgba(255, 255, 255, 0.6);
+        padding: 5px;
+
 
         p {
           font-size: 11px;
-          padding: 15px 0 0 25px;
+          padding: 5px;
           font-weight: 700;
           line-height: 25px;
           letter-spacing: 1px;
@@ -173,7 +176,7 @@
         }
         h2 {
           font-size: 22px;
-          padding-left: 25px;
+          padding-left: 5px;
           padding-top: 5px;
         }
       }
@@ -247,6 +250,7 @@
         border: none !important;
         margin-bottom: 5px;
         transition: all ease-in-out 0.5s;
+        padding: 0 5px;
         h4 {
           display: none;
         }

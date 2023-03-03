@@ -50,8 +50,12 @@
         .navbar-brand{
             margin-left: 15px;
         }
+        .collapse{
+            display: none;
+            
+        }
         .open{
-            height: calc(100vh - 52px);
+            height: 100%;
             padding: 0 25px;
             z-index: 5;
             background-color: #070724;
