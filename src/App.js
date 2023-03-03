@@ -33,7 +33,6 @@ function App() {
         setImageGeology={setImageGeology}
         setActiveButton={setActiveButton}
         activeButton={activeButton}
-        hamburgerMenuClicked={hamburgerMenuClicked}
       />
     </div>
   );

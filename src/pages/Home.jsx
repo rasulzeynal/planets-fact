@@ -10,8 +10,7 @@ const Home = ({
   imageGeology,
   setImageGeology,
   setActiveButton,
-  activeButton,
-  hamburgerMenuClicked
+  activeButton
 }) => {
   return (
     <div className={"home container"}>
